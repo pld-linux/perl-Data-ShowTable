@@ -31,7 +31,7 @@ Data::ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install

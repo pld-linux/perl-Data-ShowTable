@@ -30,7 +30,7 @@ Data-ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT

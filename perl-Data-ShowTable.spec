@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	ShowTable
-Summary:	Perl module to print arrays of data
-Summary(pl):	Modu³ perla Data::ShowTable
+Summary:	Data::ShowTable - Perl module to print arrays of data
+Summary(pl):	Data::ShowTable - modu³ Perla do wypisywania tablic danych
 Name:		perl-Data-ShowTable
 Version:	3.3
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e8a3060790803bdf9f0fcb73bb4e71c4
 Patch0:		%{name}-paths.patch
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,7 +23,10 @@ possible formats: simple table, boxed table, list style, and
 HTML-formatting (for World-Wide-Web output).
 
 %description -l pl
-Data::ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.
+Data::ShowTable to modu³ Perla definiuj±cy funkcje do wypisywania
+tablic danych w ³adnie sformatowanej postaci przy u¿yciu jednego
+z czterech mo¿liwych formatów: prostej tabeli, tabeli z komórkami,
+listy oraz formatowania HTML (do wyj¶cia WWW).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -37,7 +40,8 @@ Data::ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT

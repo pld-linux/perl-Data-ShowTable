@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	ShowTable
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl module to print arrays of data
 Summary(pl):	Modu³ perla Data-ShowTable
 Name:		perl-Data-ShowTable
 Version:	3.3
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -26,7 +25,7 @@ HTML-formatting (for World-Wide-Web output).
 Data-ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.
 
 %prep
-%setup -q -n Data-ShowTable-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build

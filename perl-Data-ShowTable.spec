@@ -5,7 +5,7 @@ Summary:	Data::ShowTable - Perl module to print arrays of data
 Summary(pl):	Data::ShowTable - modu³ Perla do wypisywania tablic danych
 Name:		perl-Data-ShowTable
 Version:	3.3
-Release:	10
+Release:	11
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz

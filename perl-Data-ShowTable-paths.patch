@@ -1,0 +1,16 @@
+--- Data-ShowTable-3.3/showtable	Wed Feb 26 04:15:48 1997
++++ Data-ShowTable-3.3.new/showtable	Sat Oct  9 20:01:25 1999
+@@ -1,4 +1,4 @@
+-#!/usr/bin/perl5
++#!/usr/bin/perl
+ # showtable - read data and show it
+ #
+ #    Copyright (C) 1996,1997  Alan K. Stebbens <aks@sgi.com>
+--- Data-ShowTable-3.3/test.pl.off	Tue Jan  7 21:35:02 1997
++++ Data-ShowTable-3.3.new/test.pl.off	Sat Oct  9 20:01:34 1999
+@@ -1,4 +1,4 @@
+-#!/usr/bin/perl5
++#!/usr/bin/perl
+ #
+ # Test program for ShowTable.pm
+ #

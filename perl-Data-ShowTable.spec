@@ -3,7 +3,7 @@ Summary:	Perl module to print arrays of data
 Summary(pl):	Modu³ perla Data-ShowTable
 Name:		perl-Data-ShowTable
 Version:	3.3
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl

@@ -29,7 +29,7 @@ Data::ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.
 %patch -p1
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install

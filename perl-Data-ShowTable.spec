@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Data
-%define	pnam	ShowTable
+%define		pdir	Data
+%define		pnam	ShowTable
 Summary:	Data::ShowTable - Perl module to print arrays of data
 Summary(pl):	Data::ShowTable - modu³ Perla do wypisywania tablic danych
 Name:		perl-Data-ShowTable

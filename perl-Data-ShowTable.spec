@@ -1,5 +1,5 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Data-ShowTable perl module
+Summary:	Perl module to print arrays of data
 Summary(pl):	Modu³ perla Data-ShowTable
 Name:		perl-Data-ShowTable
 Version:	3.3
@@ -16,7 +16,10 @@ Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-Data-ShowTable - routines to display tabular data in several formats.
+ShowTable.pm is a Perl module which defines subroutines to print arrays of
+data in a nicely formatted listing, using one of four possible formats:
+simple table, boxed table, list style, and HTML-formatting (for
+World-Wide-Web output).
 
 %description -l pl
 Data-ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.

@@ -6,7 +6,7 @@ Summary(pl):	Data::ShowTable - modu³ Perla do wypisywania tablic danych
 Name:		perl-Data-ShowTable
 Version:	3.3
 Release:	10
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e8a3060790803bdf9f0fcb73bb4e71c4

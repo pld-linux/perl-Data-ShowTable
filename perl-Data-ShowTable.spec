@@ -4,11 +4,11 @@ Summary(pl):	Modu³ perla Data-ShowTable
 Name:		perl-Data-ShowTable
 Version:	3.3
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Data/Data-ShowTable-%{version}.tar.gz
-Patch:		perl-Data-ShowTable-paths.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Data/Data-ShowTable-%{version}.tar.gz
+Patch0:		perl-Data-ShowTable-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -16,10 +16,10 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-ShowTable.pm is a Perl module which defines subroutines to print arrays of
-data in a nicely formatted listing, using one of four possible formats:
-simple table, boxed table, list style, and HTML-formatting (for
-World-Wide-Web output).
+ShowTable.pm is a Perl module which defines subroutines to print
+arrays of data in a nicely formatted listing, using one of four
+possible formats: simple table, boxed table, list style, and
+HTML-formatting (for World-Wide-Web output).
 
 %description -l pl
 Data-ShowTable - wy¶wietla dane z tabeli w ró¿nych formatach.

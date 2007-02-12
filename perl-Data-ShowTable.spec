@@ -2,7 +2,7 @@
 %define		pdir	Data
 %define		pnam	ShowTable
 Summary:	Data::ShowTable - Perl module to print arrays of data
-Summary(pl):	Data::ShowTable - modu≥ Perla do wypisywania tablic danych
+Summary(pl.UTF-8):   Data::ShowTable - modu≈Ç Perla do wypisywania tablic danych
 Name:		perl-Data-ShowTable
 Version:	3.3
 Release:	11
@@ -22,11 +22,11 @@ arrays of data in a nicely formatted listing, using one of four
 possible formats: simple table, boxed table, list style, and
 HTML-formatting (for World-Wide-Web output).
 
-%description -l pl
-Data::ShowTable to modu≥ Perla definiuj±cy funkcje do wypisywania
-tablic danych w ≥adnie sformatowanej postaci przy uøyciu jednego
-z czterech moøliwych formatÛw: prostej tabeli, tabeli z komÛrkami,
-listy oraz formatowania HTML (do wyj∂cia WWW).
+%description -l pl.UTF-8
+Data::ShowTable to modu≈Ç Perla definiujƒÖcy funkcje do wypisywania
+tablic danych w ≈Çadnie sformatowanej postaci przy u≈ºyciu jednego
+z czterech mo≈ºliwych format√≥w: prostej tabeli, tabeli z kom√≥rkami,
+listy oraz formatowania HTML (do wyj≈õcia WWW).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

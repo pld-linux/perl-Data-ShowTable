@@ -1,16 +1,19 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %define		pdir	Data
 %define		pnam	ShowTable
 Summary:	Data::ShowTable - Perl module to print arrays of data
 Summary(pl.UTF-8):	Data::ShowTable - moduł Perla do wypisywania tablic danych
 Name:		perl-Data-ShowTable
-Version:	3.3
-Release:	13
+Version:	4.6
+Release:	1
 License:	GPL v2+
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e8a3060790803bdf9f0fcb73bb4e71c4
+Source0:	https://www.cpan.org/authors/id/A/AK/AKSTE/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	2e1608ad972a60b9dfe44c60f4d8464c
 URL:		http://search.cpan.org/dist/Data-ShowTable/
-Patch0:		%{name}-paths.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -30,12 +33,15 @@ listy oraz formatowania HTML (do wyjścia WWW).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -P0 -p1
+
+%{__sed} -i -e '1s,#!/usr/bin/env perl,#!%{__perl},' showtable
 
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
